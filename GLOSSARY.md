@@ -6,7 +6,7 @@ Canonical domain terms. Add a term when it first appears in code or design; list
 
 **Run**
 One attempt in the Arena. Starts with an empty fleet: the player picks a faction and receives one
-random starting ship from it. A Run is a sequence of Cycles.
+random Uncommon starting ship from it. A Run is a sequence of Cycles.
 _Avoid_: game, match, session
 
 **Cycle** _(name under review: clashes with the campaign calendar's "cycle", a year)_
@@ -29,8 +29,14 @@ A ship's Merge rank: ★1 base ship, ★2 from three ★1 (carries a level-2 off
 _Avoid_: rank, tier, grade
 
 **Rarity**
-A ship's class within its faction. It sets the ship's price and how often the Shop offers it.
-_Avoid_: tier (reserved for Shop Tier), quality
+A hull's class, the same whichever faction builds it: Common, Uncommon, Rare, Epic or Legendary.
+It sets the ship's price and how often the Shop offers it. Skins share their base hull's Rarity.
+_Avoid_: tier (reserved for Shop Tier), quality, rarity within a faction
+
+**Ship Pool**
+Every hull the Shop can offer: all factions' combat hulls, minus restricted, boss, story,
+automated and civilian hulls, and minus anything the Rarity overrides exclude.
+_Avoid_: deck, catalogue
 
 **Endless**
 Continuing a Run after its 10th win, with no win limit; it ends only on the last loss.
