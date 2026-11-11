@@ -1,0 +1,9 @@
+{
+    "prefix": "gca_",
+    "optional_mods": [],
+    "literal_whitelist": [],
+    "allow_overrides": [],
+    "ignore": [
+        "mod id 'ghost_core_arena' is also used by .*/mods/ghost-core-arena \\(the launcher"
+    ]
+}

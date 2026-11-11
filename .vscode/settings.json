@@ -1,0 +1,31 @@
+{
+  // --- Unmanaged ("invisible") Java project: VSCode compiles src/ against the game jars ---
+  "java.project.sourcePaths": [ "src" ],
+  "java.project.outputPath": "bin",
+
+  // Game + library jars on the classpath so IntelliSense works against the API.
+  // Glob pulls in starfarer.api.jar and every other jar shipped in the install root.
+  // The "sources" entry maps the API jar to its source zip => inline javadoc and
+  // "Go to Definition" jumps into the real API sources.
+  "java.project.referencedLibraries": {
+    "include": [
+      "/home/ubik/Downloads/starsector/*.jar"
+    ],
+    "sources": {
+      "/home/ubik/Downloads/starsector/starfarer.api.jar": "/home/ubik/Downloads/starsector/starfarer.api.zip"
+    }
+  },
+
+  // Compile to Java 17 bytecode (game runs on bundled Zulu JDK 17).
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "/usr/lib/jvm/java-17-openjdk-amd64",
+      "default": true
+    }
+  ],
+
+  "files.exclude": {
+    "bin/": true
+  }
+}

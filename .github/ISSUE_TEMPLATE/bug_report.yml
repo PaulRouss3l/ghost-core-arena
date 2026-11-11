@@ -1,0 +1,47 @@
+name: Report a bug
+description: Something went wrong in Ghost Core Arena.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem! Plain words are perfect: you don't need to be technical.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe what went wrong, and what you expected instead.
+      placeholder: "Describe what you clicked and what happened."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What were you doing just before?
+      description: Where you were and what you clicked.
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Mod version
+      description: Shown in the Starsector launcher's mod list.
+      placeholder: "0.1.0"
+    validations:
+      required: false
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods you use (optional)
+      description: A short list is fine, e.g. "Nexerelin, Random Assortment of Things, MagicLib".
+    validations:
+      required: false
+  - type: textarea
+    id: log
+    attributes:
+      label: Game log (very helpful, optional)
+      description: |
+        Starsector writes a file called `starsector.log` in its install folder (next to the game).
+        Drag and drop it here. If the game crashed, please attach it right after the crash.
+    validations:
+      required: false

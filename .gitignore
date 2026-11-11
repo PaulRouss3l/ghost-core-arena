@@ -1,0 +1,10 @@
+/bin/
+/jars/*.jar
+*.log
+.DS_Store
+.claude/
+/ghost-core-arena
+/build/
+/dist/
+__pycache__/
+/art/raw/

@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Builds the mod, launches the game via run.sh (which opens a JDWP server on
+      // :5005), then attaches so breakpoints in mod code work.
+      "type": "java",
+      "name": "Debug Starsector",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": 5005,
+      "preLaunchTask": "Run Starsector",
+      "projectName": "ghost-core-arena"
+    }
+  ]
+}

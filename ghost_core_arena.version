@@ -1,0 +1,11 @@
+{
+    "masterVersionFile": "https://raw.githubusercontent.com/PaulRouss3l/ghost-core-arena/main/ghost_core_arena.version",
+    "modName": "Ghost Core Arena",
+    "modThreadId": "",
+    "directDownloadURL": "https://github.com/PaulRouss3l/ghost-core-arena/releases/download/v0.0.1/ghost-core-arena-0.0.1.zip",
+    "modVersion": {
+        "major": 0,
+        "minor": 0,
+        "patch": 1
+    }
+}
